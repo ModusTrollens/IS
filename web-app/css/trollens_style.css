@@ -1,0 +1,705 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: 10%;
+	width: 100%;
+	margin: 0%;
+	background: whitesmoke;
+}
+
+a {
+	text-decoration:none;
+    color: white;
+}
+
+a:visited {
+	color: #e8e8e8;
+}
+
+a:hover {
+	color:#e04d0b;
+}
+
+a:focus {
+	outline:0px;
+}
+
+#header {
+	background: #375C90;
+	padding: 1% 0% 1% 10%;
+	color: white;
+}
+
+#session_links {
+	width: 30%;
+	float: right;
+	text-align: right;
+	padding: 1%;
+}
+
+#container {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    margin:2%;
+}
+
+th {
+    background-color:#444444;
+    color:white;
+    border-right:1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    padding:2%;
+    margin:2%;
+}
+
+ td {
+    border-right:1px solid #d4d4d4;
+    border-left:1px solid #d4d4d4;
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+    cursor: pointer;
+    text-align: center;
+    padding: 2%;
+}
+
+tr:nth-child(odd){
+    background-color:#FFFFFF;
+}
+
+tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+tr:hover {
+	background-color:#e7e6ff;	
+}
+
+.not-found {
+	font-size: 80px;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.nyan {
+	z-index: 10;
+	top: 25%;
+	position: absolute;
+	left: 18%;
+	display: none;
+}
+
+#footer {
+	background: #1C1C1C;
+	margin-top:5%;
+	margin-bottom:3%;
+	padding: 1%;
+	color: white;
+	text-align: center;
+}
+
+#optimized-for {
+    font-size: 12px;
+}
+
+#index-table td {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 20px;
+}
+
+#index-table th {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 25px;
+}
+
+
+/*
+ * Agregar para el que se vea correctamente el index,
+ * el acceso(access) y postular curso.
+ * index.html css
+ */
+
+#acc_use {
+	padding:2px 2px 2px 2px;
+	background: #375C90;
+	border: none;
+	color: white;
+	text-shadow: 0 1px rgba(255,255,255,0.3);
+	cursor: pointer;
+	border-radius: 5px;
+	font-size:12pt;
+}
+
+#postular {
+	padding:2px 2px 2px 2px;
+	background: #375C90;
+	border: none;
+	color: white;
+	text-shadow: 0 1px rgba(255,255,255,0.3);
+	cursor: pointer;
+	border-radius: 5px;
+	font-size:12pt;
+}
+
+#sol_cur {
+	padding:2px 2px 2px 2px;
+	background: #375C90;
+	border: none;
+	color: white;
+	text-shadow: 0 1px rgba(255,255,255,0.3);
+	cursor: pointer;
+	border-radius: 5px;
+	font-size:12pt;
+}
+
+#inf {
+	text-align: left;
+}
+
+#des {
+	margin-top: 30px;
+	padding: 0.5% 3% 0.5% 3%;
+	background: #1C1C1C;
+	border-radius: 5px;
+	color: white;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	opacity: 0.85;
+	font-size:13pt;
+	text-align:center;
+}
+
+
+#ing_level {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2%;
+	border: none;
+}
+
+#ing_level tr:nth-child(even) {
+	background-color:transparent;
+}
+
+#ing_level tr:nth-child(odd) {
+	background-color:transparent;
+}
+
+#ing_level tr td {
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0%;
+	padding-right:0%;
+	cursor: default;
+}
+
+#ing_level th {
+	border: none;
+}
+
+#ing_level tr td button {
+	height:100px;
+	width: 200px;
+}
+
+#login {
+	background-color: white;
+	border-radius: 5px;
+	color:#e04d0b;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	text-align:center;
+	padding:3% 0% 3% 15%;
+}
+
+#login_table {
+	border:none;
+}
+
+#login_table tr {
+	border: none;
+	background-color:transparent;
+}
+
+
+#login_table tr td {
+	border:none;
+}
+
+#login_table #access_login {
+	margin-left:30%;
+}
+
+#login_nuser_input {
+	padding-left: 35px;
+	background-image: url('../images/usuario.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+#login_puser_input {
+	padding-left: 35px;
+	background-image: url('../images/contrasena.png');
+    background-position: center left;
+    background-repeat: no-repeat;	
+}
+
+#send_acc input {
+	padding-left: 5%;
+	padding-right:5%;
+	padding-top:2%;
+	background: #3179ef;
+	color: #FFF;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 0px #3179ef;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	height:50px;
+	width:80px;
+}
+
+
+#postu_course {
+	background-color: white;
+	border-radius: 5px;
+	color:#e04d0b;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	text-align:center;
+	padding-left: 15%;
+}
+
+#postu_table {
+	border: none;
+}
+
+#postu_table tr {
+	border: none;
+	background-color:transparent;
+}
+
+
+#postu_table tr td {
+	border:none;
+}
+
+#course_inf {
+	background-color: white;
+	border-radius: 5px;
+	color:#383838;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	text-align:left;
+	margin: 0% 5% 5% 5%;
+	padding:5% 0% 5% 15%;
+}
+
+
+#course_inf #enroll {
+	bottom: 5%;
+	right: 5%;
+	text-align: right;
+	padding:5% 10%;
+}
+
+#save_student, #rating_students {
+	background-color: white;
+	border-radius: 5px;
+	color:#383838;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	text-align:left;
+	margin: auto;
+	padding: 2% 5% 5%;
+	width:40%;
+}
+
+ 
+#save_student p {
+	font-size:15pt;
+}
+
+#save_student input[type=submit], #rating_students input[type=submit] {
+	margin-top:5%;
+	margin-left:50%;
+}
+
+#table_rating_students .set_rating_student {
+	text-align:left;
+}
+
+#table_rating_students .comment {
+	width:100%;
+}
+
+#alum_general_inf, #profe_general_inf {
+	background-color: white;
+	border-radius: 5px;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	padding: 3%;
+	margin-top:3%;
+}
+
+#alum_general_inf p {
+	font-size:13pt;
+}
+
+#edit_student, #edit_professor {
+	padding-left: 12%;
+}
+
+#delete_student, #delete_professor {
+	text-align:center;
+}
+
+#edit_student_table, #edit_professor_table {
+	border: none;
+	color:#e04d0b;
+}
+
+#regis_wannabie {
+	background-color: white;
+	border-radius: 5px;
+	color:#e04d0b;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	text-align:center;
+	padding-left: 15%;
+}
+
+
+#regis_wannabie hr {
+	margin-left: -5%;
+	width:90%;
+}
+
+#regis_wannabie p {
+	text-align:left;
+	margin-left:-5%;
+	color:grey;
+	size:15pt;
+	font-weight:bold;
+}
+
+#wannabie_table, #course_table, #send_wannabie, #student_table, #edit_student_table, #edit_professor_table, #table_rating_students {
+	border: none;
+}
+
+#wannabie_table tr, #course_table tr, #send_wannabie tr, #student_table tr, #edit_student_table tr, #edit_professor_table tr, #table_rating_students tr {
+	border: none;
+	background-color:transparent;
+}
+
+#wannabie_table tr td, #course_table tr td, #send_wannabie tr td, #student_table tr td, #edit_student_table tr td, #edit_professor_table tr td, #table_rating_students tr td {
+	border: none;
+}
+
+#edit_main {
+	background-color: white;
+	border-radius: 5px;
+	color:#e04d0b;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	text-align:center;
+	padding-left: 15%;
+}
+
+#edit_table {
+	border: none;
+}
+
+#edit_table tr {
+	border: none;
+	background-color:transparent;
+}
+
+#edit_table tr td {
+	border: none;
+}
+
+#notificacion {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    opacity: 0.85;
+    z-index: 5;
+    background:black;
+    display:none;
+}
+
+#menu {
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+    width: 20%;
+    display:none;
+}
+
+
+#access {
+	background: #f2f2f2;
+	border: 1px solid #1C1C1C;
+	border-radius: 15px;
+	padding: 3%;
+	margin: 3%;
+	box-shadow: 0px 0px 15px #888888;
+}
+
+#text-box {
+    position: absolute;
+    top: 10%;
+    margin: 2%;
+    z-index: 10;
+    display: none;
+    border-radius: 40px;
+    background: whitesmoke;
+    box-shadow: 3px 3px 2px 2px #1C1C1C;
+    padding: 1%;
+    text-align:center;
+}
+
+#overlay {
+    position:fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index:90;
+    opacity:0.6;
+  	-o-filter: blur(5px);
+  	-ms-filter: blur(5px);
+  	display:none;
+}
+
+#overlay_student, #overlay_ratings_students {
+	position:fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    z-index:99;
+    margin: auto;
+    display:none;
+    overflow:auto;
+    padding-top:30px;
+}
+
+
+input[type=text],input[type=tel],input[type=email],input[type=number],input[type=password] {
+    margin-top:10px;
+    margin-left:10px;
+    height:30px;
+    border:1px solid #8a8a8a;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right:10px;
+}
+
+input[type=file], select{
+    margin-top:10px;
+    margin-left:7px;
+    height:30px;
+    padding-left: 20px;
+    padding-right:10px;
+}
+
+input[type=button],input[type=submit], button {
+	margin-top:2%;
+	padding-left: 5%;
+    padding-right:5%;
+    background: #3179ef;
+    color: #FFF;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 0px #3179ef;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    height:40px;
+    cursor:pointer;
+    box-shadow: 1px 3px 0 #2662c6;
+    transition: all 0.01s linear;
+	-webkit-transition: all 0.01s linear;
+	-moz-transition: all 0.01s linear;
+	position: relative;
+	bottom: 0;
+	text-decoration:none;
+}
+
+input[type=button]:active, input[type=submit]:active, button:active {
+	bottom: -5px;
+	box-shadow:0 0 0 #2662c6, inset 0 0 7px rgba(0, 0, 0, 0.4);
+	text-decoration:none;
+}
+
+input[type=button]::-moz-focus-inner, input[type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+	 border: none;
+}
+
+
+.main{
+}
+
+.empty {
+  width:0%;
+  height:0%;
+}
+
+.postu_teach_inf, .wannabie_inf, .user_inf, .edit_inf, .course_inf, .student_inf, .professor_inf {
+	width:150px;
+	text-align:left;
+	padding-left: 2%;
+}
+.user_inf_input, .wannabie_inf_input, .edit_inf_input, .course_inf_input, .student_inf_input, .professor_inf_input {
+	text-align:left;
+	padding-left:2%;
+}
+
+.input-error {
+	border: 1px solid red !important;
+	background-color:#FFF3F3;
+}
+
+.messageInputE {
+	border-radius: 5px;
+	color:#e04d0b;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	text-align:center;
+	padding:10px;
+	background-color:#FFF3F3;
+}
+
+.form-error {
+	
+}
+
+.messageInputS {
+	width: 150px;
+	height: 30px;
+	border-radius: 5px;
+	color:#e04d0b;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	text-align:center;
+	padding:10px;
+	background-color:#ddffeb;
+}
+
+.showSuccess {
+	position:fixed !important;
+	width:40% !important;
+	left:30% !important;
+	margin:auto;
+	padding:20px;
+	text-align:center;
+	bottom:10% !important;
+	border:2px solid #026a18;
+	border-radius: 5px;
+	color:#026a18;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	background-color:#ddffeb;
+}
+
+.showError {
+	position:fixed !important;
+	width:40% !important;
+	left:30% !important;
+	margin:auto;
+	padding:20px;
+	text-align:center;
+	bottom:5% !important;
+	border:2px solid #e04d0b;
+	border-radius: 5px;
+	color:#e04d0b;
+	box-shadow:
+		0 2px 2px rgba(0,0,0,0.2),
+		0 1px 5px rgba(0,0,0,0.2); 
+	font-size:13pt;
+	background-color:#FFF3F3;
+}
+.close_overlay {
+	background: url("../images/overlay-close.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 49px;
+    width: 50px;
+    margin: 0;
+    text-indent:-999999px;
+    position:absolute;
+    left: 73%;
+    text-decoration:none;
+    top:0px;
+}
+
+.close_overlay:hover{
+	background-position: left bottom;
+	text-indent:-999999px;
+	text-decoration:none;
+}
+
+.pagination a, .pagination .currentStep {
+	display: inline-block;
+	margin: 0 0.1em;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	-webkit-border-radius: 0.3em;
+	        border-radius: 0.3em;
+}
+
+.pagination a {
+	color: blue;
+}
+
+.pagination a:hover {
+	color:#e04d0b;
+}
